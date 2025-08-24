@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Arra - Web Developer Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#home" class="logo">RA</a>
+            <div class="desktop-nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="mobile-menu-button">☰</button>
+        </nav>
+        <div id="mobile-menu">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <h1>Rahul Arra</h1>
+                <p>IT undergrad focused on full-stack development and cloud tech. I enjoy building scalable apps and using AI to create smart, data-driven user experiences.</p>
+                <div>
+                    <a href="#projects" class="cta-button cta-primary">See My Projects</a>
+                    <a href="#contact" class="cta-button cta-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">A few things I've built. Dive in to see how I approach problems.</p>
+                <div class="projects-grid">
+                    
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/1a202c/63b3ed?text=Health+Dashboard" alt="Digital Health Portfolio">
+                        <div class="project-card-content">
+                            <h3>Digital Health Portfolio (MERN)</h3>
+                            <p>A full-stack app for managing personal health records, featuring AI-driven insights with the MERN stack and Gemini API.</p>
+                            <a href="https://github.com/RahulArra/Digital-Health-portfolio">View Details →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/1a202c/63b3ed?text=Cinema+Booking" alt="Movie Ticket Booking System">
+                        <div class="project-card-content">
+                            <h3>Online Movie Ticket Booking System</h3>
+                            <p>A secure booking site using Java Servlets and JDBC, with role-based access for admins and users.</p>
+                            <a href="https://github.com/RahulArra/Online-movie-ticket-booking">View Details →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/1a202c/63b3ed?text=Card+Match+Game" alt="Memory Card Matching Game">
+                        <div class="project-card-content">
+                            <h3>Memory Card Matching Game</h3>
+                            <p>An interactive, multiplayer memory game built with vanilla HTML, CSS, and JavaScript, with dynamic gameplay.</p>
+                            <a href="https://multiplayermemorycardgame.netlify.app/">View Details →</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">My Tech Stack</h2>
+                 <p class="section-subtitle">Here are the primary technologies, languages, and tools I work with.</p>
+                <div class="skills-layout">
+                    <div class="skills-chart-wrapper">
+                       <div class="chart-container">
+                           <canvas id="skillsChart"></canvas>
+                       </div>
+                    </div>
+                    <div class="skills-text-wrapper">
+                        <div class="skills-grid">
+                            <div>
+                                <h3>Programming</h3>
+                                <ul>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>JavaScript</li>
+                                    <li>SQL, HTML/CSS</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Frameworks</h3>
+                                <ul>
+                                    <li>React</li>
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Databases & Cloud</h3>
+                                <ul>
+                                    <li>MongoDB</li>
+                                    <li>MySQL</li>
+                                    <li>Google Cloud</li>
+                                    <li>REST APIs</li>
+                                </ul>
+                            </div>
+                             <div>
+                                <h3>Developer Tools</h3>
+                                <ul>
+                                    <li>Git & VS Code</li>
+                                    <li>Postman</li>
+                                    <li>Data Structures</li>
+                                    <li>OOP & OS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                 <h2 class="section-title">About Me</h2>
+                <div class="about-layout">
+                    <div class="about-image-wrapper">
+                        <img src="https://placehold.co/400x400/2d3748/e2e8f0?text=RA" alt="Rahul Arra Portrait">
+                    </div>
+                    <div class="about-text-wrapper">
+                        <p>Hello! I'm Rahul, an IT student at CBIT, Hyderabad. My passion for tech is all about building scalable applications and using AI to create smarter, more intuitive user experiences.</p>
+                        <p>I enjoy the challenge of turning a complex idea into a simple, elegant software solution. Through my projects, I've gotten hands-on experience with Java, Python, and the MERN stack, building full-stack applications from scratch.</p>
+                        <p>Outside of coding, I'm usually on the basketball court or involved with the CBIT Kreeda club. I'm currently studying for my Azure Fundamentals certification and looking forward to diving into the world of DevOps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">Have a question or want to work together? Leave your details and I'll get back to you.</p>
+
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="cta-button">Send Message</button>
+    </form>
+
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/rahul-arra-474097324/">LinkedIn</a>
+        <a href="https://github.com/RahulArra/">GitHub</a>
+    </div>
+</div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rahul Arra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('#mobile-menu a, .desktop-nav a');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+            });
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileMenu.classList.contains('active')) {
+                       mobileMenu.classList.remove('active');
+                    }
+                });
+            });
+
+            const skillsChartCtx = document.getElementById('skillsChart').getContext('2d');
+            const skillsChart = new Chart(skillsChartCtx, {
+                type: 'radar',
+                data: {
+                    labels: ['Java', 'Python', 'JavaScript', 'React', 'Node.js', 'MongoDB', 'SQL'],
+                    datasets: [{
+                        label: 'Proficiency',
+                        data: [85, 85, 70, 50, 20, 85, 95],
+                        backgroundColor: 'rgba(99, 179, 237, 0.2)',
+                        borderColor: 'rgba(99, 179, 237, 1)',
+                        pointBackgroundColor: 'rgba(99, 179, 237, 1)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgba(99, 179, 237, 1)'
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: {
+                                color: 'rgba(255, 255, 255, 0.2)'
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.2)'
+                            },
+                            pointLabels: {
+                                font: {
+                                    size: 12
+                                },
+                                color: '#e2e8f0'
+                            },
+                            ticks: {
+                                backdropColor: 'transparent',
+                                color: 'rgba(255, 255, 255, 0.5)',
+                                stepSize: 25
+                            },
+                            suggestedMin: 0,
+                            suggestedMax: 100
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed.r !== null) {
+                                        label += context.parsed.r + '%';
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
