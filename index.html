@@ -1,200 +1,388 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul Arra  Portfolio</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Rahul Arra — Full-Stack & Cloud Developer</title>
+    <meta name="description" content="Portfolio of Rahul Arra, an Information Technology undergraduate building AI-integrated systems, RAG pipelines, and scalable MERN applications on AWS.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="port.css">
 </head>
 <body>
 
     <header>
         <nav class="container">
-            <a href="#home" class="logo">RA <span class="logo-text">DEV</span></a>
+            <a href="#home" class="logo">
+                <span class="logo-mark">RA</span>
+                <span class="logo-text">Rahul Arra</span>
+            </a>
             <div class="desktop-nav">
                 <a href="#home" class="nav-link">Home</a>
+                <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#skills" class="nav-link">Skills</a>
-                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <button id="mobile-menu-button" aria-label="Toggle navigation">☰</button>
         </nav>
         <div id="mobile-menu">
             <a href="#home">Home</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
-            <a href="#about">About</a>
+            <a href="#education">Education</a>
             <a href="#contact">Contact</a>
         </div>
     </header>
 
     <main>
-       <section id="home">
-    <div class="container hero-content">
-        <p class="greeting-text">Hello, I'm</p>
-        <h1>Rahul Arra</h1>
-        <p class="subtitle">Full-Stack Developer | MERN Stack Enthusiast | IT Undergrad (9.06 CGPA)</p>
-        <p class="tagline">Focused on building scalable, data-driven applications and integrating AI (Gemini API) to create intuitive user experiences.</p>
-        <div class="cta-group">
-            <a href="#projects" class="cta-button cta-primary">See My Work →</a>
-            <a href="rahul_resume.pdf" class="cta-button cta-secondary" download>Download Resume</a>
-        </div>
-    </div>
-</section>
+        <section id="home" class="hero">
+            <div class="container hero-layout">
+                <div class="hero-copy">
+                    <p class="eyebrow">Full-stack &amp; cloud developer</p>
+                    <h1>Rahul Arra</h1>
+                    <p class="hero-role">B.E. Information Technology <span class="pipe">|</span> CBIT, Hyderabad <span class="pipe">|</span> CGPA 9.03</p>
+                    <p class="tagline">I build AI-integrated systems — from LLM-based threat analysis and RAG pipelines to scalable MERN applications deployed on AWS with auto-scaling and load balancing. Focused on intelligent, cloud-native systems that hold up under real load.</p>
+                    <div class="cta-group">
+                        <a href="#projects" class="cta-button cta-primary">View Projects</a>
+                        <a href="rahul_resume.pdf" class="cta-button cta-secondary" download>Download Resume</a>
+                    </div>
+                    <div class="stat-strip">
+                        <div>
+                            <div class="stat-value">9.03</div>
+                            <div class="stat-label">CGPA · CBIT</div>
+                        </div>
+                        <div>
+                            <div class="stat-value">350+</div>
+                            <div class="stat-label">DSA problems solved</div>
+                        </div>
+                        <div>
+                            <div class="stat-value">6</div>
+                            <div class="stat-label">Certifications</div>
+                        </div>
+                        <div>
+                            <div class="stat-value">99.9%</div>
+                            <div class="stat-label">Uptime, AWS deploy</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-diagram">
+                    <p class="diagram-caption">System pattern I build often</p>
+                    <div class="diagram-card">
+                        <svg viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing data flow from client to API to data pipeline to cloud and AI services">
+                            <path class="diagram-line" d="M40,60 H120 M120,60 H200 M200,60 H280 M280,60 H360"></path>
+                            <circle class="flow-dot" cx="40" cy="60" r="3.5"></circle>
+
+                            <g class="diagram-node">
+                                <circle cx="40" cy="60" r="20"></circle>
+                                <text x="40" y="100" text-anchor="middle">Client</text>
+                            </g>
+                            <g class="diagram-node">
+                                <circle cx="160" cy="60" r="20"></circle>
+                                <text x="160" y="100" text-anchor="middle">API</text>
+                            </g>
+                            <g class="diagram-node">
+                                <circle cx="280" cy="60" r="20"></circle>
+                                <text x="280" y="100" text-anchor="middle">Pipeline</text>
+                            </g>
+                            <g class="diagram-node">
+                                <circle cx="360" cy="60" r="20"></circle>
+                                <text x="360" y="100" text-anchor="middle">Cloud / AI</text>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Where I've worked</p>
+                    <h2 class="section-title">Experience</h2>
+                    <p class="section-subtitle">My internship focused on backend API design and the data layer behind production features.</p>
+                </div>
+
+                <div class="experience-card reveal">
+                    <div class="experience-head">
+                        <div>
+                            <div class="experience-role">Full Stack Intern</div>
+                            <div class="experience-org">Vault of Codes</div>
+                        </div>
+                        <div class="experience-date">June 2025 – Aug 2025</div>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Designed and implemented <strong>10+ RESTful backend APIs</strong> using Node.js and Express, contributing to core business logic and reliable data exchange across application workflows.</li>
+                        <li>Integrated backend services with frontend components, adding input validation and structured error handling for consistent, reliable API responses.</li>
+                        <li>Worked with MongoDB to design <strong>5+ collections</strong> and optimize data structures, improving data integrity and query efficiency.</li>
+                        <li>Used Git for version control and Postman for API testing and validation throughout development.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
         <section id="projects">
             <div class="container">
-                <h2 class="section-title">My Projects</h2>
-                <p class="section-subtitle">A few things I've built. Dive in to see how I approach problems.</p>
-                <div class="projects-grid">
-                    
-                    <div class="project-card">
-                        <img src="https://placehold.co/600x400/1a202c/63b3ed?text=Digital+Health" alt="Digital Health Portfolio">
-                        <div class="project-card-content">
-                            <h3>Digital Health Portfolio (MERN)</h3>
-                            <p>Full-stack app for health records, featuring AI-driven BMI insights and secure image handling via Cloudinary.</p>
-                            <div class="tech-tags">
-                                <span>MERN</span>
-                                <span>Gemini API</span>
-                                <span>Cloudinary</span>
-                            </div>
-                            <a href="https://github.com/RahulArra/Digital-Health-portfolio">View Details →</a>
-                        </div>
-                    </div>
+                <div class="section-head reveal">
+                    <p class="eyebrow">What I've built</p>
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-subtitle">A selection of academic projects spanning security tooling, real-time data pipelines, and full-stack AI applications.</p>
+                </div>
 
-                    <div class="project-card">
-                        <img src="https://placehold.co/600x400/1a202c/63b3ed?text=Campus+Tracker" alt="Campus Activity Tracker">
-                        <div class="project-card-content">
-                            <h3>Campus Activity Tracker (MERN)</h3>
-                            <p>Campus management system with role-based access and streamlined CSV/XLSX bulk upload for hundreds of users.</p>
-                            <div class="tech-tags">
-                                <span>MERN</span>
-                                <span>Node.js</span>
-                                <span>CSV Parsing</span>
-                            </div>
-                            <a href="https://github.com/RahulArra/Campus_activity">View Details →</a>
-                        </div>
-                    </div>
+                <div class="projects-carousel reveal" aria-label="Project highlights carousel">
+                    <button class="carousel-arrow left" type="button" aria-label="Previous project">‹</button>
+                    <div class="carousel-viewport">
+                        <div class="carousel-track" id="projectsCarouselTrack">
 
-                    <div class="project-card">
-                        <img src="https://placehold.co/600x400/1a202c/63b3ed?text=Cinema+Booking" alt="Movie Ticket Booking System">
-                        <div class="project-card-content">
-                            <h3>Online Movie Ticket Booking</h3>
-                            <p>A secure booking site using Java Servlets, JDBC, and MySQL, implementing role-based access and transactional integrity.</p>
-                            <div class="tech-tags">
-                                <span>Java</span>
-                                <span>Servlets</span>
-                                <span>MySQL</span>
-                            </div>
-                            <a href="https://github.com/RahulArra/Online-movie-ticket-booking">View Details →</a>
+                            <article class="carousel-card" data-project>
+                                <div class="carousel-card-media">
+                                    <img src="https://placehold.co/900x500/14181F/4FBDA0?text=AI+Honeypot" alt="AI-Integrated Honeypot with Chaos Engineering Simulation">
+                                </div>
+                                <div class="carousel-card-body">
+                                    <h3>AI-Integrated Honeypot with Chaos Engineering Simulation</h3>
+                                    <p>Architected a fake SSH honeypot on AWS EC2 that captured 500+ attacker sessions for behavioral analysis. Used the Groq API to auto-classify attacker commands into 10+ threat categories at 92% accuracy, and built a chaos engine (latency injection, service disruption) that cut MTTD by 35%. Containerized with Docker across 10+ simulated attack scenarios.</p>
+                                    <div class="tech-tags">
+                                        <span>AWS EC2</span><span>Python</span><span>Docker</span><span>Groq API</span><span>SQLite</span>
+                                    </div>
+                                    <a href="https://github.com/RahulArra/honeypot-chaos" class="carousel-card-cta" target="_blank" rel="noopener" aria-label="View on GitHub">View on GitHub →</a>
+                                </div>
+                            </article>
+
+                            <article class="carousel-card" data-project>
+                                <div class="carousel-card-media">
+                                    <img src="https://placehold.co/900x500/14181F/4FBDA0?text=Streaming+Analytics" alt="Real-Time Big Data Streaming and Analytics">
+                                </div>
+                                <div class="carousel-card-body">
+                                    <h3>Real-Time Big Data Streaming &amp; Analytics</h3>
+                                    <p>Architected an event-driven pipeline with Apache Flink and Kafka processing 5,000+ events/hr at under 1 second end-to-end latency. Embedded TextBlob NLP for real-time sentiment scoring across 4 categories, then built a Node.js + Socket.io bridge that streamed a rolling window of 200+ live analytics to a React dashboard — eliminating HTTP polling entirely.</p>
+                                    <div class="tech-tags">
+                                        <span>Apache Flink</span><span>Kafka</span><span>Node.js</span><span>Socket.io</span><span>React</span>
+                                    </div>
+                                    <a href="https://github.com/RahulArra/flink-kakfa" class="carousel-card-cta" target="_blank" rel="noopener" aria-label="View on GitHub">View on GitHub →</a>
+                                </div>
+                            </article>
+
+                            <article class="carousel-card" data-project>
+                                <div class="carousel-card-media">
+                                    <img src="https://placehold.co/900x500/14181F/4FBDA0?text=Digital+Health+RAG" alt="Digital Health Portfolio deployed on AWS">
+                                </div>
+                                <div class="carousel-card-body">
+                                    <h3>Digital Health Portfolio (AWS Deployed)</h3>
+                                    <p>Deployed a full-stack MERN application on AWS EC2 with S3 for secure storage of medical records, prescriptions, and health history. Scaled to handle 300+ concurrent requests using Auto Scaling Groups and an Application Load Balancer at 99.9% uptime. Built a RAG pipeline with vector search and the Gemini API to generate personalized suggestions, medication reminders, and insights matching 10+ patient-specific conditions per query.</p>
+                                    <div class="tech-tags">
+                                        <span>MERN</span><span>AWS</span><span>RAG</span><span>Gemini API</span>
+                                    </div>
+                                    <a href="https://github.com/RahulArra/Digital-Health-portfolio" class="carousel-card-cta" target="_blank" rel="noopener" aria-label="View on GitHub">View on GitHub →</a>
+                                </div>
+                            </article>
+
+                            <article class="carousel-card" data-project>
+                                <div class="carousel-card-media">
+                                    <img src="https://placehold.co/900x500/14181F/4FBDA0?text=Ticket+Booking" alt="Online Movie Ticket Booking System">
+                                </div>
+                                <div class="carousel-card-body">
+                                    <h3>Online Movie Ticket Booking System</h3>
+                                    <p>Built a multi-tier application with Java, JDBC, JSP, and MySQL following OOP and MVC design principles, supporting three distinct user roles (User, Admin, Theatre Manager). Enforced ACID-compliant transactions with pessimistic locking to eliminate concurrent booking conflicts, and implemented role-based access control across three privilege tiers.</p>
+                                    <div class="tech-tags">
+                                        <span>Java</span><span>JDBC</span><span>JSP</span><span>MySQL</span>
+                                    </div>
+                                    <a href="https://github.com/RahulArra/Online-movie-ticket-booking" class="carousel-card-cta" target="_blank" rel="noopener" aria-label="View on GitHub">View on GitHub →</a>
+                                </div>
+                            </article>
+
+                            <article class="carousel-card" data-project>
+                                <div class="carousel-card-media">
+                                    <img src="https://placehold.co/900x500/14181F/4FBDA0?text=Campus+Activity" alt="Campus Activity Management System">
+                                </div>
+                                <div class="carousel-card-body">
+                                    <h3>Campus Activity Management System</h3>
+                                    <p>Built a web app to digitize tracking of co-curricular and academic activities across a university, replacing scattered offline records with a centralized MongoDB database. Implemented role-based access control across four levels — students, class teachers, department heads, and admins — with hierarchical visibility into activity data. Added a proof-verification workflow where students upload certificates via Cloudinary, preventing fraudulent attendance claims.</p>
+                                    <div class="tech-tags">
+                                        <span>React</span><span>Tailwind CSS</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span><span>Cloudinary</span>
+                                    </div>
+                                    <a href="https://github.com/RahulArra/Campus_activity" class="carousel-card-cta" target="_blank" rel="noopener" aria-label="View on GitHub">View on GitHub →</a>
+                                </div>
+                            </article>
+
                         </div>
                     </div>
-                    
+                    <div class="carousel-dots" id="projectsCarouselDots" aria-label="Carousel pagination"></div>
+                    <button class="carousel-arrow right" type="button" aria-label="Next project">›</button>
                 </div>
             </div>
         </section>
 
         <section id="skills">
             <div class="container">
-                <h2 class="section-title">My Tech Stack</h2>
-                 <p class="section-subtitle">Here are the primary technologies, languages, and tools I work with.</p>
-                <div class="skills-layout">
-                    <div class="skills-text-wrapper">
-                        <div class="skills-grid">
-                            <div class="skill-category">
-                                <h3>Programming</h3>
-                                <ul class="skill-list">
-                                    <li>Java</li>
-                                    <li>Python</li>
-                                    <li>JavaScript</li>
-                                    <li>SQL, HTML/CSS</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h3>Frameworks & Data</h3>
-                                <ul class="skill-list">
-                                    <li>React, Node.js, Express.js</li>
-                                    <li>MongoDB, MySQL</li>
-                                    <li>Data Structures & Algorithms</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h3>CS Fundamentals</h3>
-                                <ul class="skill-list">
-                                    <li>OOP</li>
-                                    <li>Operating Systems (OS)</li>
-                                    <li>Database Systems (DBMS)</li>
-                                    <li>Computer Networks</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h3>Tools & Cloud</h3>
-                                <ul class="skill-list">
-                                    <li>Git & VS Code, Postman</li>
-                                    <li>Google Cloud Fundamentals</li>
-                                    <li>Gemini API, Cloudinary</li>
-                                    <li>Upcoming: AZ-900 (Azure)</li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="section-head reveal">
+                    <p class="eyebrow">Tools of the trade</p>
+                    <h2 class="section-title">Skills</h2>
+                    <p class="section-subtitle">Grouped the way I actually use them — languages, the web stack, cloud and data infrastructure, and AI tooling.</p>
+                </div>
+
+                <div class="skills-grid reveal">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <ul class="skill-list">
+                            <li>Java</li><li>Python</li><li>JavaScript</li><li>SQL</li>
+                        </ul>
                     </div>
-                    <div class="skills-chart-wrapper">
-                        <div class="chart-container">
-                             <canvas id="skillsChart"></canvas>
-                             
-                        </div>
+
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <ul class="skill-list">
+                            <li>React</li><li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>WebSockets</li><li>HTML</li><li>CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Cloud &amp; DevOps</h3>
+                        <ul class="skill-list">
+                            <li>AWS EC2</li><li>S3</li><li>RDS</li><li>Lambda</li><li>Auto Scaling</li><li>CloudFront</li><li>ALB</li><li>Docker</li><li>GCP</li><li>Linux</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Databases</h3>
+                        <ul class="skill-list">
+                            <li>MySQL</li><li>MongoDB</li><li>SQLite</li><li>JDBC</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>AI / ML</h3>
+                        <ul class="skill-list">
+                            <li>Machine Learning</li><li>Deep Learning</li><li>Generative AI</li><li>LLM Integration</li><li>Prompt Engineering</li><li>Gemini API</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Core CS</h3>
+                        <ul class="skill-list">
+                            <li>Data Structures &amp; Algorithms</li><li>OOP</li><li>Operating Systems</li><li>DBMS</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Big Data</h3>
+                        <ul class="skill-list">
+                            <li>Spark</li><li>HDFS</li><li>Kafka</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Developer Tools</h3>
+                        <ul class="skill-list">
+                            <li>Git</li><li>Postman</li><li>VS Code</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-<section id="about">
-    <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-layout">
-            <div class="about-image-wrapper">
-                <img src="https://placehold.co/400x400/2d3748/e2e8f0?text=RA" alt="Rahul Arra Portrait">
-            </div>
-            <div class="about-text-wrapper">
-                <p>Hello! I'm Rahul, an <strong>Information Technology undergraduate (CGPA: 9.06)</strong> from CBIT, Hyderabad. I am a passionate problem-solver, driven by turning complex ideas into simple, elegant software solutions.</p>
-                <p>I have hands-on experience in <strong>full-stack development</strong> using the <strong>MERN stack</strong> and strong foundations in core <strong>CS concepts (DSA, OOP, OS)</strong>. My internship at Vault of Codes allowed me to contribute to API design and deploy functional features in iterative cycles.</p>
-                <p>I actively pursue cloud and AI knowledge, having integrated the <strong>Gemini API</strong> into a major project and currently preparing for the <strong>AZ-900: Microsoft Azure Fundamentals</strong> certification. Outside of code, I am a runner, and I was a regional-level basketball player and part of the CBIT Kreeda club.</p>
-            </div>
-        </div>
-    </div>
-</section>
-        
-        <section id="contact" class="contact">
+        <section id="education">
             <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Have a question or want to work together? Leave your details and I'll get back to you.</p>
+                <div class="section-head reveal">
+                    <p class="eyebrow">Background &amp; credentials</p>
+                    <h2 class="section-title">Education &amp; Certifications</h2>
+                    <p class="section-subtitle">Coursework, certifications, and a steady habit of solving problems.</p>
+                </div>
 
-                <form action="https://formspree.io/f/xrbazloj" method="POST" class="contact-form">
-                    <input type="hidden" name="_redirect" value="https://rahularra.netlify.app/thanks.html">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                <div class="education-layout reveal">
+                    <div>
+                        <p class="edu-block-title">Education</p>
+                        <div class="edu-item">
+                            <div class="edu-degree">B.E., Information Technology</div>
+                            <div class="edu-school">Chaitanya Bharathi Institute of Technology, Hyderabad</div>
+                            <div class="edu-meta">CGPA 9.03 · Graduating May 2027</div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-degree">Intermediate, CBSE (M.P.C.)</div>
+                            <div class="edu-school">Jawahar Navodaya Vidyalaya, Karimnagar</div>
+                            <div class="edu-meta">85% · March 2023</div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="cta-button cta-primary">Send Message</button>
-                </form>
 
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/rahul-arra-474097324/" target="_blank" aria-label="LinkedIn Profile"><img src="https://img.icons8.com/ios-filled/30/63b3ed/linkedin-squared.png" alt="LinkedIn"></a>
-                    <a href="https://github.com/RahulArra/" target="_blank" aria-label="GitHub Profile"><img src="https://img.icons8.com/ios-filled/30/63b3ed/github.png" alt="GitHub"></a>
-                    <a href="mailto:rahularra30@gmail.com" aria-label="Email Rahul"><img src="https://img.icons8.com/ios-filled/30/63b3ed/new-post.png" alt="Email"></a>
+                    <div>
+                        <p class="edu-block-title">Certifications &amp; Achievements</p>
+                        <ul class="cert-list">
+                            <li><span class="cert-marker">▸</span><span>Google Cloud Computing Fundamentals — NPTEL</span><span class="cert-year">2024</span></li>
+                            <li><span class="cert-marker">▸</span><span>Salesforce Certified AI Associate — Trailhead</span><span class="cert-year">2025</span></li>
+                            <li><span class="cert-marker">▸</span><span>MongoDB Associate Developer Certification</span><span class="cert-year">2025</span></li>
+                            <li><span class="cert-marker">▸</span><span>Oracle Cloud Infrastructure Certified AI Foundations Associate</span><span class="cert-year">2025</span></li>
+                            <li><span class="cert-marker">▸</span><span>Vault of Codes — Backend Development Program</span><span class="cert-year">2025</span></li>
+                            <li><span class="cert-marker">▸</span><span>350+ DSA problems solved on LeetCode &amp; GeeksforGeeks</span><span class="cert-year">Ongoing</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">A bit more about me</p>
+                    <h2 class="section-title">About</h2>
+                </div>
+                <div class="about-layout reveal">
+                    <div class="about-image-wrapper">
+                        <img src="https://placehold.co/400x400/14181F/F3F1EA?text=RA" alt="Rahul Arra">
+                    </div>
+                    <div class="about-text-wrapper">
+                        <p>I'm an <strong>Information Technology undergraduate at CBIT, Hyderabad</strong> (CGPA: 9.03, graduating May 2027), with a strong foundation in core CS — data structures and algorithms, OOP, operating systems, and DBMS.</p>
+                        <p>Most of my work sits at the intersection of <strong>full-stack development and cloud infrastructure</strong>. I build with the MERN stack and deploy on AWS using EC2, S3, Auto Scaling Groups, and Load Balancers — and I like pushing those systems until they actually need that infrastructure, not just for the sake of using it.</p>
+                        <p>Lately I've been focused on <strong>AI-integrated systems</strong>: LLM-based log and threat analysis, RAG pipelines with vector search, and prompt engineering with the Gemini and Groq APIs. During my internship at <strong>Vault of Codes</strong>, I designed REST APIs and worked on MongoDB schema design for production features.</p>
+                        <p>Outside of project work, I keep up a steady practice on <strong>DSA</strong> — 350+ problems solved across LeetCode and GeeksforGeeks — and hold certifications across AWS-adjacent cloud platforms, AI, and database fundamentals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Let's talk</p>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Open to internships, full-time roles, and collaborations on full-stack or AI/cloud projects. Send a message or reach out directly.</p>
+                </div>
+
+                <div class="contact-layout reveal">
+                    <form action="https://formspree.io/f/xrbazloj" method="POST" class="contact-form">
+                        <input type="hidden" name="_redirect" value="https://rahularra.netlify.app/thanks.html">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="you@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="What would you like to discuss?"></textarea>
+                        </div>
+                        <button type="submit" class="cta-button cta-primary">Send Message</button>
+                    </form>
+
+                    <div class="contact-aside">
+                        <h3>Direct contact</h3>
+                        <ul class="contact-meta">
+                            <li><span class="meta-label">Email</span><a href="mailto:rahularra30@gmail.com">rahularra30@gmail.com</a></li>
+                            <li><span class="meta-label">Phone</span><a href="tel:+918341586020">+91 83415 86020</a></li>
+                            <li><span class="meta-label">Location</span>Hyderabad, Telangana</li>
+                            <li><span class="meta-label">GitHub</span><a href="https://github.com/RahulArra" target="_blank" rel="noopener">github.com/RahulArra</a></li>
+                            <li><span class="meta-label">LinkedIn</span><a href="https://linkedin.com/in/rahul-arra-474097324" target="_blank" rel="noopener">linkedin.com/in/rahul-arra</a></li>
+                            <li><span class="meta-label">LeetCode</span><a href="https://leetcode.com/rahularra" target="_blank" rel="noopener">leetcode.com/rahularra</a></li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/rahul-arra-474097324" target="_blank" rel="noopener" aria-label="LinkedIn Profile"><img src="https://img.icons8.com/ios-filled/30/4FBDA0/linkedin-squared.png" alt=""></a>
+                            <a href="https://github.com/RahulArra" target="_blank" rel="noopener" aria-label="GitHub Profile"><img src="https://img.icons8.com/ios-filled/30/4FBDA0/github.png" alt=""></a>
+                            <a href="mailto:rahularra30@gmail.com" aria-label="Email Rahul"><img src="https://img.icons8.com/ios-filled/30/4FBDA0/new-post.png" alt=""></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -202,13 +390,13 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Rahul Arra. All Rights Reserved.</p>
+            <p>&copy; 2026 Rahul Arra. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Mobile Menu Toggle
+            // Mobile menu toggle
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             const navLinks = document.querySelectorAll('#mobile-menu a, .desktop-nav a');
@@ -216,65 +404,108 @@
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('active');
             });
-            
+
             navLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     if (mobileMenu.classList.contains('active')) {
-                       mobileMenu.classList.remove('active');
+                        mobileMenu.classList.remove('active');
                     }
                 });
             });
 
-            // Skills Radar Chart
-            const skillsChartCtx = document.getElementById('skillsChart').getContext('2d');
-            const skillsChart = new Chart(skillsChartCtx, {
-                type: 'radar',
-                data: {
-                    labels: ['Java', 'Python', 'JavaScript', 'React', 'Node.js', 'MongoDB', 'SQL'],
-                    datasets: [{
-                        label: 'Proficiency',
-                        data: [85, 85, 70, 50, 20, 85, 95],
-                        backgroundColor: 'rgba(99, 179, 237, 0.2)',
-                        borderColor: 'rgba(99, 179, 237, 1)',
-                        pointBackgroundColor: 'rgba(99, 179, 237, 1)',
-                        pointBorderColor: '#fff',
-                        pointHoverBackgroundColor: '#fff',
-                        pointHoverBorderColor: 'rgba(99, 179, 237, 1)'
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        r: {
-                            angleLines: { color: 'rgba(255, 255, 255, 0.2)' },
-                            grid: { color: 'rgba(255, 255, 255, 0.2)' },
-                            pointLabels: {
-                                font: { size: 12 },
-                                color: '#e2e8f0'
-                            },
-                            ticks: {
-                                backdropColor: 'transparent',
-                                color: 'rgba(255, 255, 255, 0.5)',
-                                stepSize: 25,
-                                showLabelBackdrop: false
-                            },
-                            suggestedMin: 0,
-                            suggestedMax: 100
-                        }
-                    },
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    return context.label + ': ' + context.parsed.r + '%';
-                                }
-                            }
-                        }
-                    }
+            // Projects carousel
+            (function initProjectsCarousel() {
+                const track = document.getElementById('projectsCarouselTrack');
+                const dotsWrap = document.getElementById('projectsCarouselDots');
+                if (!track || !dotsWrap) return;
+
+                const cards = Array.from(track.querySelectorAll('.carousel-card'));
+                const prevBtn = document.querySelector('.projects-carousel .carousel-arrow.left');
+                const nextBtn = document.querySelector('.projects-carousel .carousel-arrow.right');
+
+                let index = 0;
+
+                function updateDots() {
+                    Array.from(dotsWrap.children).forEach((dot, i) => {
+                        dot.classList.toggle('active', i === index);
+                    });
                 }
-            });
+
+                function goTo(i) {
+                    index = (i + cards.length) % cards.length;
+                    const w = cards[0] ? cards[0].getBoundingClientRect().width : 0;
+                    const gap = parseFloat(getComputedStyle(track).gap || 0);
+                    track.style.transform = `translateX(${-index * (w + gap)}px)`;
+                    updateDots();
+                }
+
+                dotsWrap.innerHTML = '';
+                cards.forEach((_, i) => {
+                    const dot = document.createElement('button');
+                    dot.type = 'button';
+                    dot.className = 'carousel-dot';
+                    dot.setAttribute('aria-label', `Go to project ${i + 1}`);
+                    dot.addEventListener('click', () => goTo(i));
+                    dotsWrap.appendChild(dot);
+                });
+
+                updateDots();
+
+                prevBtn?.addEventListener('click', () => goTo(index - 1));
+                nextBtn?.addEventListener('click', () => goTo(index + 1));
+
+                const viewport = document.querySelector('.projects-carousel .carousel-viewport');
+                if (viewport) {
+                    let startX = 0;
+                    let isDragging = false;
+
+                    viewport.addEventListener('pointerdown', (e) => {
+                        if (e.target.closest('a, button')) {
+                            isDragging = false;
+                            return;
+                        }
+                        isDragging = true;
+                        startX = e.clientX;
+                        viewport.setPointerCapture(e.pointerId);
+                    });
+
+                    viewport.addEventListener('pointerup', (e) => {
+                        if (!isDragging) return;
+                        isDragging = false;
+                        const dx = e.clientX - startX;
+                        const threshold = 45;
+                        if (dx > threshold) goTo(index - 1);
+                        if (dx < -threshold) goTo(index + 1);
+                    });
+                }
+
+                window.addEventListener('resize', () => goTo(index));
+
+                goTo(0);
+            })();
+
+            // Scroll reveal
+            (function initScrollReveal() {
+                const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                const elements = document.querySelectorAll('.reveal');
+                if (!elements.length) return;
+
+                if (reduceMotion) {
+                    elements.forEach(el => el.classList.add('reveal-visible'));
+                    return;
+                }
+
+                const obs = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('reveal-visible');
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.12 });
+
+                elements.forEach(el => obs.observe(el));
+            })();
         });
     </script>
 
